@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Accueil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.4.5.min.css">
+
+
+        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/alfoxTheme.css">
+        <link rel="stylesheet" href="css/alfox.css?<% out.print(System.currentTimeMillis()); %>">
+
+        <script type="text/javascript" src="js/jquery/jquery-1.11.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/map.js?ts=<% out.print(System.currentTimeMillis()); %>"
+        >
+        </script>
+        
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAteLjItiBvWdZJNOm97mU-jWaqtJ857Fc&callback=initialize"> </script>
+    </head>
+    <body>
+            
+        <div data-role="page" id="page1">
+            <div class="header" data-role="header" data-id="main-header" data-tap-toggle="false" 
+                 data-theme="a" data-position="fixed" data-fullscreen="true">
+                  <h1>
+                    <img id="logoHeader" src="images/alcisLogo.png"/>
+                    Localisation  
+                    
+                    <form id="btnDeconnectionLocalisation" method="post" action="alfoxControl.jsp">
+                        <input name="action" id="logout" type="hidden" value="logout"/>
+                        <button type="submit" id="submitOK" name="submitOK">
+                            <img id="white" src="css/themes/images/icons-png/power-white.png" >
+                            <img id="black" src="css/themes/images/icons-png/power-black.png" >
+                        </button>
+                    </form>
+                    
+                </h1>
+                <a href="#panelZones" 
+                   class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-location ui-btn-left">
+                </a>
+                <a href="#panelVehicules" 
+                   class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-btn-right">
+                </a>
+            </div>
+            
+            <div role="main" class="ui-content">
+                <br/><br/><br/>
+                <div id="test1"></div>
+                <div id="test2"></div>
+                <!-- map google -->
+                <div id="map"></div>
+                <br/><br/><br/>
+            </div>        
+            
+          
+        <!-- panel de zones -->
+        <div id="panelZones" data-role="panel" data-position="left"  
+            data-position-fixed="true" data-display="push">
+            <ol id="listeZones" data-role="listview" data-icon="false">
+                <li data-role="list-divider">Zones limites :</li>
+             
+                        <li id="1"><a href='#'>1</a>
+                                <input type='hidden' id='1' value='1' /></li>
+                      
+            </ol>
+        </div>
+        
+        <!-- panel de véhicules -->
+        <div id="panelVehicules" data-role="panel" data-position="right"  
+                 data-position-fixed="true" data-display="push">
+            <div data-role="collapsibleset" data-inset="false">
+            
+                    
+                    <div data-role='collapsibleset' data-inset='false'>
+                    <div data-role='collapsible'>
+                    <h3>"Plaque-1"</h3>
+                    <ul data-role='listview' data-icon='false'>
+                    <li id="immat" data-icon='false'><a href='#'>Centrer</a></li>
+                    <li id="immat2"Mode data-icon='false'>NORMAL</li>
+                    <li id="immat3"Compteur data-icon='false'>Compteur :  km</li>
+                    <li id="immat4"Conso data-icon='false'>ConsoMoy :  l</li>
+                    <li id="immat5"Vitesse data-icon='false'>VitMoy :  km/h</li>
+                    <li id="immat6"Regime data-icon='false'>RégimeMoy :  tpm</li>
+                    </div>
+                        <div data-role='collapsibleset' data-inset='false'>
+                    <div data-role='collapsible'>
+                    <h3>"Plaque-2"</h3>
+                    <ul data-role='listview' data-icon='false'>
+                    <li id=" + immat + " data-icon='false'><a href='#'>Centrer</a></li>
+                    <li id=" + immat + "Mode data-icon='false'>NORMAL</li>
+                    <li id=" + immat + "Compteur data-icon='false'>Compteur :  km</li>
+                    <li id=" + immat + "Conso data-icon='false'>ConsoMoy :  l</li>
+                    <li id=" + immat + "Vitesse data-icon='false'>VitMoy :  km/h</li>
+                    <li id=" + immat + "Regime data-icon='false'>RégimeMoy :  tpm</li>
+                    </div>
+                  
+            </div>
+            </div>
+        </div>
+            </div>
+        <div class="footer" data-role="footer" data-theme="a" data-tap-toggle="false"
+                 data-id="main-footer" data-position="fixed" data-fullscreen="true">
+                <div data-role='navbar' data-grid='c'>
+                    <ul>
+                        <li><a href='accueil.html' data-ajax='false' id='navbarhome' data-icon='home'>Accueil</a></li>
+                        <li><a href='localisation.html' data-ajax='false' id='navbarSuivi' data-icon='location'>Localisation</a></li>
+                        <li><a href='infos.html' data-ajax='false' id='navbarInfos' data-icon='info'>Infos</a></li>
+                        <li><a href='gestion.html' data-ajax='false' id='navbarGestion' data-icon='edit'>Gestion</a></li>
+                    </ul>
+                </div>
+    </body>
+</html>
