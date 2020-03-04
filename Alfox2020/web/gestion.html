@@ -4,14 +4,12 @@
     <head>
         <title>Accueil</title>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
 
         <meta name="apple-mobile-web-app-capable" content="yes"/>
         <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
         <link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.4.5.min.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 
         <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
@@ -19,11 +17,13 @@
         <link rel="stylesheet" href="css/alfox.css?<% out.print(System.currentTimeMillis()); %>">
 
         <script type="text/javascript" src="js/jquery/jquery-1.11.2.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        
         <script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
     </head>
     <body>
 
-        <div data-role="page" id="page3">
+        <div data-role="page" id="page1">
             <div class="header" data-role="header" data-id="main-header" data-tap-toggle="false" 
                  data-theme="a" data-position="fixed" data-fullscreen="true">
                 <h1>
@@ -41,11 +41,12 @@
                 </h1>
 
             </div>
-            <br><br><br><br><br><br>
-            <center>
+            
+            <br><br>
                 <div>
                     Veuillez choisir un véhicule:
                     <fieldset data-role="controlgroup" data-type="horizontal">
+                        
                             <label for="select-custom-11">Select A</label>
                             <select name="select-custom-11" id="select-custom-11" data-native-menu="false">
                                     <option value="#">ZD-555-ED</option>
@@ -55,7 +56,7 @@
                     </fieldset>
                 </div>
 
-            </center>
+            
             <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
          <thead>
            <tr class="ui-bar-d">

@@ -29,61 +29,6 @@
 #btnDeconnection:hover #black {
     display: block;
 }
-
-/*btnDeco page info*/
-
-#btnDeconnectionInfos{
-    position: absolute;
-    right: 10vw;
-    top: -3px;
-}
-
-#btnDeconnectionInfos img {
-    display: flex;
-}
-
-#btnDeconnectionInfos:hover #white {
-    display: none;
-}
-
-#btnDeconnectionInfos #black {
-    display: none;
-}
-
-#btnDeconnectionInfos:hover #black {
-    display: block;
-}
-/*btn deco pour localisation*/
-
-#btnDeconnectionLocalisation{
-    position: absolute;
-    right: 3vw;
-    top: -3px;
-}
-
-#btnDeconnectionLocalisation img {
-    display: flex;
-}
-
-#btnDeconnectionLocalisation:hover #white {
-    display: none;
-}
-
-#btnDeconnectionLocalisation #black {
-    display: none;
-}
-
-#btnDeconnectionLocalisation:hover #black {
-    display: block;
-}
-/* Changement de mode de la page infos */
-.mode{
-    position: fixed;
-    top : -3px; 
-    right: 50px;
-}
-
-
 /* le logo ne prend que 30% de la largeur de l'écran */
 .logo img {
     border-radius: 8px;
@@ -121,7 +66,6 @@
     border-width: 1px;
     border-color: #AAAAAA;
 }
-
 /* pour les cartes */
 .card {
     background-color: #fafafa;
@@ -179,83 +123,19 @@
     padding: 0px 30% 0px 30% !important;
 }
 
-/*.form1{
-    width: 20%;
-    float: left;
-}*/
 
-/* Nombre de messages restants de la page infos */
-.mess{
-    float: right;
+#datepicker {    
+    width: 100px;
+    height: auto;
+    font: 9pt Arial, sans-serif;
 }
 
-/* popup page infos */
-#positionWindow,
-#positionWindow1,
-#positionWindow2,
-#positionWindow3{
-    width: 450px;
-    height: 100px;
-    z-index: 1;
+
+.header {
+
 }
 
-.annuler{
-    top: -30px;
-    right: -250px;
-}
-
-.ok{
-    top: 22px;
-}
-
-.tablist-left {
-    width: -webkit-fill-available;
-    display: inline-block;
-}
-.tablist-content {
-    width: 60%;
-    display: inline-block;
-    vertical-align: top;
-    margin-left: 0;
-}
-.th-groups th {
-    background-color: rgba(58,81,153,0.3);
-    border-right: 1px solid #fff;
-    text-align: center;
-}
-#tabGestion{
-    position: absolute;
-    left: auto;
-    right: auto;
-    margin-bottom: 4em;
-}
-#tabGestion tr {
-    background-color: #eee;
-    border-top: 1px solid #fff;
-}
-#tabGestion tr:hover {
-    background-color: #ccc;
-}
-#tabGestion th {
-    background-color: #fff;
-}
-#tabGestion th, #tabGestion td {
-    padding: 3px 5px;
-}
-#tabGestion td:hover {
-    cursor: pointer;
-}
-
-#phone::-webkit-inner-spin-button,
-#phone::-webkit-outer-spin-button{-webkit-appearance: none;
-                                  margin: 0;
-}
-#phone::-o-inner-spin-button,
-#phone::-o-outer-spin-button{-o-appearance: none;
-                             margin: 0;
-}
-
-#Eboitier{
-    display: block;
-    position: relative;
+#datepicker ,
+.ui-input-text {
+    width: 100px;
 }

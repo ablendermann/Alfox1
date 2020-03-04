@@ -2,41 +2,22 @@
 // --------------------- callback ----------------------- 
 
 $(function () {
-    $("#infosSelectImmatriculation").on("change", infosNewImmaSelect);
-    $("#dateSelect").on("change", infosNewDateSelect);
+    $("#datepicker").datepicker();
+   
 });
 
-function infosNewImmaSelect() {
-    isi = document.getElementById("infosSelectImmatriculation");
-
-    $.ajax({
-        url: 'alfoxControl.jsp?action=r_infosLastDateByImmatriculation',
-        type: 'POST',
-        data: {immatriculation: isi[isi.selectedIndex].value},
-        dataType: 'html',
-        success: function (data) {
-            var tabInfos = data.split("||");
-            $('#dateSelect').val(tabInfos[1]);
-            infosNewDateSelect();
-        }
-    });
-}
-
-function infosNewDateSelect() {
-    isi = document.getElementById("infosSelectImmatriculation");
-    ds = document.getElementById("dateSelect");
-    //alert(isi[isi.selectedIndex].value + " " + ds.value);
-    // $('#infosTR').html(isi[isi.selectedIndex].value + " " + ds.value);
-
-    $.ajax({
-        url: 'alfoxControl.jsp?action=r_infosByImmaAndDate',
-        type: 'POST',
-        data: {immatriculation: isi[isi.selectedIndex].value, date: ds.value},
-        dataType: 'html',
-        success: function (data) {
-            var tabInfos = data.split("||");
-            $('#infosTR').html(tabInfos[0]);
-            $('.mode').html("Mode : " + tabInfos[1]);
-        }
-    });
-}
+$(function() {$( "#datepicker" ).datepicker({
+  firstDay: 1,
+  altField: "#datepicker",
+  closeText: 'Fermer',
+  prevText: 'Précédent',
+  nextText: 'Suivant',
+  currentText: 'Aujourd\'hui',
+  monthNames: ['Janvier', 'Février', 'Mars', 'Avril', 'Mai', 'Juin', 'Juillet', 'Août', 'Septembre', 'Octobre', 'Novembre', 'Décembre'],
+  monthNamesShort: ['Janv.', 'Févr.', 'Mars', 'Avril', 'Mai', 'Juin', 'Juil.', 'Août', 'Sept.', 'Oct.', 'Nov.', 'Déc.'],
+  dayNames: ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'],
+  dayNamesShort: ['Dim.', 'Lun.', 'Mar.', 'Mer.', 'Jeu.', 'Ven.', 'Sam.'],
+  dayNamesMin: ['D', 'L', 'M', 'M', 'J', 'V', 'S'],
+  weekHeader: 'Sem.',
+  dateFormat: 'yy-mm-dd'});});
+  
