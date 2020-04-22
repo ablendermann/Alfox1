@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Accueil</title>
+        
         <meta charset="utf-8">
 
         <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
@@ -65,28 +65,27 @@
             <div data-role='navbar' data-grid='b'>
                 <ul>
                     <li><a href='accueil.html' data-ajax='false' id='navbarHome1' data-icon='info'>Infos</a></li>
-                    <li><a href='localisation.html' data-ajax='false' id='navbarLoc' data-icon='grid'>Stats</a></li>
-                    <li><a href='infos.html' data-ajax='false' id='navbarInfos1' data-icon='clock'>Historique</a></li>
+                    <li><a href='stats.html' data-ajax='false' id='navbarLoc' data-icon='grid'>Stats</a></li>
+                    <li><a href='hitorique.html' data-ajax='false' id='navbarInfos1' data-icon='clock'>Historique</a></li>
 
                 </ul>
             </div>
 
             
-                <div>
-                    Veuillez choisir un véhicule:
-                    <fieldset data-role="controlgroup" data-type="horizontal">
-                            <label for="select-custom-11">Select A</label>
-                            <select name="select-custom-11" id="select-custom-11" data-native-menu="false">
-                                    <option value="#">ZD-555-ED</option>
-                                    <option value="#">GG-999-ER</option>
-                                    <option value="#">HH-444-ER</option>
-                                </select>
-                    </fieldset>
-                </div>
-            <div id="123">
-            <p>Date:<input type="date" id="datepicker" ></p>
+                <form class="form" >
+                        <div class="ui-field-contain">
+                            <label class="label" for="select-native-1">Véhicule :</label>
+                            <select name="select-native-1" id="select-native-1">
+                            <option value="#">ZD-555-ED</option>
+                            <option value="#">GG-999-ER</option>
+                            <option value="#">HH-444-ER</option>
+                            </select>
+                        </div>
+                    </form>
+            <form class="form">
+            <p>Veuillez choisir la date:<input type="date" id="datepicker" ></p>
             
-            </div>
+            </form>
            
 
                 <div class="footer" data-role="footer" data-theme="a" data-tap-toggle="false"
