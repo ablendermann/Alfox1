@@ -25,7 +25,6 @@
 
             <div role="main" class="ui-content">
                 <center>
-
                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                     <script type="text/javascript">
                         google.charts.load('current', {packages: ['corechart']});
@@ -154,9 +153,6 @@
 
 
                     </script>
-
-
-
                     <br><br>
                     <div data-role='navbar' data-grid='b'>
                         <ul>
@@ -205,18 +201,7 @@
                     <br>
                 </center>
             </div>
-            <div class="footer" data-role="footer" data-theme="a" data-tap-toggle="false"
-                 data-id="main-footer" data-position="fixed" data-fullscreen="true">
-                <div data-role='navbar' data-grid='c'>
-                    <ul>
-                        <li><a href='accueil.jsp' data-ajax='false' id='navbarhome' data-icon='home'>Accueil</a></li>
-                        <li><a href='localisation.jsp' data-ajax='false' id='navbarSuivi' data-icon='location'>Localisation</a></li>
-                        <li><a href='infos.jsp' data-ajax='false' id='navbarInfos' data-icon='info'>Infos</a></li>
-                        <li><a href='gestion.jsp' data-ajax='false' id='navbarGestion' data-icon='edit'>Gestion</a></li>
-                    </ul>
-                </div>
-            </div>
+            <%@include file="/includes/footer.jspf"%>
         </div>
-
     </body>
 </html>

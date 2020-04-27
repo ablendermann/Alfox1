@@ -28,11 +28,8 @@
                             <img id="black" src="css/themes/images/icons-png/power-black.png" >
                         </button>
                     </form>
-
                 </h1>
-
             </div>
-
             <div role="main" class="ui-content">
                 <br/><br/><br/>
                 <div id="test1"></div>
@@ -58,19 +55,6 @@
                 </script>         
                 <br/><br/><br/>
             </div>        
-
-
-
-
-            <div class="footer" data-role="footer" data-theme="a" data-tap-toggle="false"
-                 data-id="main-footer" data-position="fixed" data-fullscreen="true">
-                <div data-role='navbar' data-grid='c'>
-                    <ul>
-                        <li><a href='accueil.jsp' data-ajax='false' id='navbarhome' data-icon='home'>Accueil</a></li>
-                        <li><a href='localisation.jsp' data-ajax='false' id='navbarSuivi' data-icon='location'>Localisation</a></li>
-                        <li><a href='infos.jsp' data-ajax='false' id='navbarInfos' data-icon='info'>Infos</a></li>
-                        <li><a href='gestion.jsp' data-ajax='false' id='navbarGestion' data-icon='edit'>Gestion</a></li>
-                    </ul>
-                </div>
-                </body>
-                </html>
+            <%@include file="/includes/footer.jspf"%>
+    </body>
+</html>

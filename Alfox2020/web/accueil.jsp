@@ -12,8 +12,6 @@
                  data-theme="a" data-position="fixed" data-fullscreen="true">
                 <h1>
                     <img id="logoHeader" src="images/alcisLogo.png"/>
-
-
                     <form id="btnDeconnection" method="post" action="index.jsp">
                         <input name="action" id="logout" type="hidden" value="logout"/>
                         <button type="submit" id="submitOK" name="submitOK">
@@ -21,7 +19,6 @@
                             <img id="black" src="css/themes/images/icons-png/power-black.png" >
                         </button>
                     </form>
-
                 </h1>
             </div>
 
@@ -37,11 +34,10 @@
                                 <div id="cnv" class="cardValeur">
                                     10
                                 </div>
-
                                 <div class="cardUnite">Véhicules</div>
-
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="cardTitre">Nombre de véhicules hors zone</div>
                             <div class="container">
@@ -51,6 +47,7 @@
                                 <div class="cardUnite">Véhicules</div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="cardTitre">Age moyen</div>
                             <div class="container">
@@ -60,6 +57,7 @@
                                 <div class="cardUnite">Jours</div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="cardTitre">Kilométrage moyen</div>
                             <div class="container">
@@ -69,6 +67,7 @@
                                 <div class="cardUnite">Km</div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="cardTitre">Kilométrage mensuel moyen</div>
                             <div class="container">
@@ -78,6 +77,7 @@
                                 <div class="cardUnite">Km/mois</div>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="cardTitre">Conso. mensuelle moyenne</div>
                             <div class="container">
@@ -88,25 +88,13 @@
                             </div>
                         </div>
                     </div>
-                    <br/><br/><br/><br/><br/>
 
+                    <br/><br/><br/><br/><br/>
                     <p class="mini">V3.1 - Mars 2020<br/>Développement : BTS SNIR Lycée V.Hugo Colomiers</p>
                     <br/><br/><br/>
                 </center>
             </div>
-            <div class="footer" data-role="footer" data-theme="a" data-tap-toggle="false"
-                 data-id="main-footer" data-position="fixed" data-fullscreen="true">
-                <div data-role='navbar' data-grid='c'>
-                    <ul>
-                        <li><a href='accueil.jsp' data-ajax='false' id='navbarhome' data-icon='home'>Accueil</a></li>
-                        <li><a href='localisation.jsp' data-ajax='false' id='navbarSuivi' data-icon='location'>Localisation</a></li>
-                        <li><a href='infos.jsp' data-ajax='false' id='navbarInfos' data-icon='info'>Infos</a></li>
-                        <li><a href='gestion.jsp' data-ajax='false' id='navbarGestion' data-icon='edit'>Gestion</a></li>
-                    </ul>
-                </div>
-
-            </div>
-
+            <%@include file="/includes/footer.jspf"%>
         </div>
     </body>
 </html>
