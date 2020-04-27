@@ -2,24 +2,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Accueil</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
-
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-        <link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.4.5.min.css">
-
-
-        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-        <link rel="stylesheet" href="css/alfoxTheme.css">
-        <link rel="stylesheet" href="css/alfox.css?<% out.print(System.currentTimeMillis()); %>">
-
-        <script type="text/javascript" src="js/jquery/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+        <title>Accueil</title> 
+        <%@ include file="/includes/header.jspf" %>  
     </head>
     <body>
 
@@ -30,7 +14,7 @@
                     <img id="logoHeader" src="images/alcisLogo.png"/>
 
 
-                    <form id="btnDeconnection" method="post" action="index.html">
+                    <form id="btnDeconnection" method="post" action="index.jsp">
                         <input name="action" id="logout" type="hidden" value="logout"/>
                         <button type="submit" id="submitOK" name="submitOK">
                             <img id="white" src="css/themes/images/icons-png/power-white.png" >
@@ -48,23 +32,23 @@
                     <br/><br/>
                     <div class="grid">
                         <div class="card">
-                            <div class="cardTitre">Nombre de vÃ©hicules</div>
+                            <div class="cardTitre">Nombre de véhicules</div>
                             <div class="container">
                                 <div id="cnv" class="cardValeur">
                                     10
                                 </div>
-                                
-                                <div class="cardUnite">VÃ©hicules</div>
+
+                                <div class="cardUnite">Véhicules</div>
 
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardTitre">Nombre de vÃ©hicules hors zone</div>
+                            <div class="cardTitre">Nombre de véhicules hors zone</div>
                             <div class="container">
                                 <div id="cnvhz" class="cardValeur">
                                     2
                                 </div>
-                                <div class="cardUnite">VÃ©hicules</div>
+                                <div class="cardUnite">Véhicules</div>
                             </div>
                         </div>
                         <div class="card">
@@ -77,7 +61,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardTitre">KilomÃ©trage moyen</div>
+                            <div class="cardTitre">Kilométrage moyen</div>
                             <div class="container">
                                 <div id="ckm" class="cardValeur">
                                     60000
@@ -86,7 +70,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <div class="cardTitre">KilomÃ©trage mensuel moyen</div>
+                            <div class="cardTitre">Kilométrage mensuel moyen</div>
                             <div class="container">
                                 <div id="ckmm" class="cardValeur">
                                     1540
@@ -106,7 +90,7 @@
                     </div>
                     <br/><br/><br/><br/><br/>
 
-                    <p class="mini">V3.1 - Mars 2020<br/>DÃ©veloppement : BTS SNIR LycÃ©e V.Hugo Colomiers</p>
+                    <p class="mini">V3.1 - Mars 2020<br/>Développement : BTS SNIR Lycée V.Hugo Colomiers</p>
                     <br/><br/><br/>
                 </center>
             </div>
@@ -114,10 +98,10 @@
                  data-id="main-footer" data-position="fixed" data-fullscreen="true">
                 <div data-role='navbar' data-grid='c'>
                     <ul>
-                        <li><a href='accueil.html' data-ajax='false' id='navbarhome' data-icon='home'>Accueil</a></li>
-                        <li><a href='localisation.html' data-ajax='false' id='navbarSuivi' data-icon='location'>Localisation</a></li>
-                        <li><a href='infos.html' data-ajax='false' id='navbarInfos' data-icon='info'>Infos</a></li>
-                        <li><a href='gestion.html' data-ajax='false' id='navbarGestion' data-icon='edit'>Gestion</a></li>
+                        <li><a href='accueil.jsp' data-ajax='false' id='navbarhome' data-icon='home'>Accueil</a></li>
+                        <li><a href='localisation.jsp' data-ajax='false' id='navbarSuivi' data-icon='location'>Localisation</a></li>
+                        <li><a href='infos.jsp' data-ajax='false' id='navbarInfos' data-icon='info'>Infos</a></li>
+                        <li><a href='gestion.jsp' data-ajax='false' id='navbarGestion' data-icon='edit'>Gestion</a></li>
                     </ul>
                 </div>
 

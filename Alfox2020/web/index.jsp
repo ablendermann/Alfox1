@@ -6,46 +6,29 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
+        <title>Accueil</title> 
+        <%@ include file="/includes/header.jspf" %>
 
-        <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-
-        <meta name="apple-mobile-web-app-capable" content="yes"/>
-        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-        <link rel="stylesheet" href="js/jquery.mobile/jquery.mobile-1.4.5.min.css">
-
-        
-        <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
-        <link rel="stylesheet" href="css/alfoxTheme.css">
-        <link rel="stylesheet" href="css/alfox.css">
-
-        <script type="text/javascript" src="js/jquery/jquery-1.11.2.min.js"></script>
-        <script type="text/javascript" src="js/jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
     </head>
-
-
     <body>
         <div data-role="page" id="page1">
             <div class="header" data-role="header" data-id="main-header" data-tap-toggle="false" 
                  data-theme="a" data-position="fixed" data-fullscreen="true">
                 <h1><img id="logoHeader" src="images/alcisLogo.png"/>Accueil</h1>
             </div>
-            
+
             <div role="main" class="ui-content">
                 <center>
                     <br/><br/><br/>
-                    <h2>Suivi et maintenance d'une flotte de vÃ©hicules V3.1</h2>
+                    <h2>Suivi et maintenance d'une flotte de véhicules V3.1</h2>
                     <br/><br/>
                     <div class="logo"><img src="images/logo.png"/></div>  
                     <br/>
                     <div>
-                        
+
                     </div>
                     <br/><br/><br/>
-                    <form id="formLogin" class="form" method="post" action="accueil.html">
+                    <form id="formLogin" class="form" method="post" action="accueil.jsp">
                         <div data-role="fieldcontain">
                             <label for="mdp">Mot de passe:</label>
                             <input type="password" name="mdp" id="mdp"/>
@@ -53,7 +36,7 @@ and open the template in the editor.
                         <input name="action" id="login" type="hidden" value="login_req"/><br/>
                         <button type="submit" id="submitOK" name="submitOK">OK</button>
                     </form>
-                    <p class="mini">V3.1 - Mars 2020<br/>DÃ©veloppement : BTS SNIR LycÃ©e V.Hugo Colomiers</p>
+                    <p class="mini">V3.1 - Mars 2020<br/>Développement : BTS SNIR Lycée V.Hugo Colomiers</p>
                 </center>
             </div>
         </div>
