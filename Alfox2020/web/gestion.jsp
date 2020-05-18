@@ -40,68 +40,7 @@
                 </fieldset>
             </div>
 
-
-            <table data-role="table" id="table-custom-2" data-mode="columntoggle" class="ui-body-d ui-shadow table-stripe ui-responsive" data-column-btn-theme="b" data-column-btn-text="Columns to display..." data-column-popup-theme="a">
-                <thead>
-                    <tr class="ui-bar-d">
-                         <th data-priority="2">Informations detaillées du vehicule choisi</th>
-                         <th>Valeurs</th>
-
-                         </tr>
-                </thead>
-                <tbody>
-                     <tr>
-                         <th>1</th>
-                        <td><a href="http://en.wikipedia.org/wiki/Citizen_Kane" data-rel="external">Citizen Kane</a></td>
-                         
-                         </tr>
-                     <tr>
-                         <th>2</th>
-                         <td><a href="http://en.wikipedia.org/wiki/Casablanca_(film)" data-rel="external">Casablanca</a></td>
-                         
-                         </tr>
-                     <tr>
-                         <th>3</th>
-                         <td><a href="http://en.wikipedia.org/wiki/The_Godfather" data-rel="external">The Godfather</a></td>
-
-                         </tr>
-                     <tr>
-                         <th>4</th>
-                        <td><a href="http://en.wikipedia.org/wiki/Gone_with_the_Wind_(film)" data-rel="external">Gone with the Wind</a></td>
-
-                         </tr>
-                     <tr>
-                         <th>5</th>
-                        <td><a href="http://en.wikipedia.org/wiki/Lawrence_of_Arabia_(film)" data-rel="external">Lawrence of Arabia</a></td>
-                         
-                         </tr>
-                     <tr>
-                         <th>6</th>
-                         <td><a href="http://en.wikipedia.org/wiki/Dr._Strangelove" data-rel="external">Bomb</a></td>
-
-                         </tr>
-                     <tr>
-                         <th>7</th>
-                         <td><a href="http://en.wikipedia.org/wiki/The_Graduate" data-rel="external">The Graduate</a></td>
-
-                         </tr>
-                     <tr>
-                         <th>8</th>
-                         <td><a href="http://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)" data-rel="external">The Wizard of Oz</a></td>
-
-                    </tr>
-                     <tr>
-                         <th>9</th>
-                         <td><a href="http://en.wikipedia.org/wiki/Singin%27_in_the_Rain" data-rel="external">Singin' in the Rain</a></td>
-                         
-                         </tr>
-                     <tr>
-                         <th>10</th>
-                         <td class="title"><a href="http://en.wikipedia.org/wiki/Inception" data-rel="external">Inception</a></td>
-                         
-                         </tr>
-                     </tbody>
-                 </table>
+                CDC A DEFINIR PLUS TARD!
                 <%@include file="/includes/footer.jspf"%>
         </div>
     </body>

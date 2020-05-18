@@ -32,7 +32,7 @@
                 <ul>
                     <li><a href='infos.jsp' data-ajax='false' id='navbarHome1' data-icon='info'>Infos</a></li>
                     <li><a href='stats.jsp' data-ajax='false' id='navbarLoc' data-icon='grid'>Stats</a></li>
-                    <li><a href='hitorique.jsp' data-ajax='false' id='navbarInfos1' data-icon='clock'>Historique</a></li>
+                    <li><a href='historique.jsp' data-ajax='false' id='navbarInfos1' data-icon='clock'>Historique</a></li>
 
                 </ul>
             </div>

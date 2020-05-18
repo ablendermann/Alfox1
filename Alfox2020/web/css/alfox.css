@@ -29,6 +29,30 @@
 #btnDeconnection:hover #black {
     display: block;
 }
+/*btn deco pour localisation*/
+
+#btnDeconnectionLocalisation{
+    position: absolute;
+    right: 3vw;
+    top: -3px;
+}
+
+#btnDeconnectionLocalisation img {
+    display: flex;
+}
+
+#btnDeconnectionLocalisation:hover #white {
+    display: none;
+}
+
+#btnDeconnectionLocalisation #black {
+    display: none;
+}
+
+#btnDeconnectionLocalisation:hover #black {
+    display: block;
+}
+
 /* le logo ne prend que 30% de la largeur de l'écran */
 .logo img {
     border-radius: 8px;
@@ -121,21 +145,4 @@
 .form {
     margin-top: 25px;
     padding: 0px 30% 0px 30% !important;
-}
-
-
-#datepicker {    
-    width: 100px;
-    height: auto;
-    font: 9pt Arial, sans-serif;
-}
-
-
-.header {
-
-}
-
-#datepicker ,
-.ui-input-text {
-    width: 100px;
 }
