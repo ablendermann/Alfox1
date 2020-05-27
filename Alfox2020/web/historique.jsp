@@ -41,7 +41,7 @@
                     </ul>
                 </div>
                 <a href="#panelInfo" 
-                   class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-location ui-btn-left">
+                   class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-action ui-btn-left">
                 </a>
                 <a href="#panelDate" 
                    class="ui-btn ui-btn-icon-notext ui-corner-all ui-icon-bars ui-btn-right">
@@ -124,20 +124,21 @@
             <div id="panelInfo" data-role="panel" data-position="left"  
                  data-position-fixed="true" data-display="push">
                 <ol id="listeInfo" data-role="listview" data-icon="false">
-                    <li data-role="list-divider">Informations sur le véhicule</li>
-                    <li id=""><a href='#'></a></li>
-                    <li id=""><a href='#'></a></li>
-                    <li id=""><a href='#'></a></li>
+                    <li data-role="list-divider">Dates:</li>
+                    <p>Du: <input type="text" id="datepicker"></p>
+                    <p>Au: <input type="text" id="datepicker1"></p>
                 </ol>
+                
             </div>
 
             <!-- panel de véhicules -->
             <div id="panelDate" data-role="panel" data-position="right"  
                  data-position-fixed="true" data-display="push">
                 <ol id="listeInfo" data-role="listview" data-icon="false">
-                    <li data-role="list-divider">Dates:</li>
-                    <p>Du: <input type="text" id="datepicker"></p>
-                    <p>Au: <input type="text" id="datepicker1"></p>
+                    <li data-role="list-divider">Informations sur le véhicule</li>
+                    <li id=""><a href='#'></a></li>
+                    <li id=""><a href='#'></a></li>
+                    <li id=""><a href='#'></a></li>
                 </ol>
             </div>
         </div>

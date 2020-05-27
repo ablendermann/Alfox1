@@ -6,7 +6,6 @@
         <%@ include file="/includes/header.jspf" %>  
     </head>
     <body>
-
         <div data-role="page" id="page1">
             <div class="header" data-role="header" data-id="main-header" data-tap-toggle="false" 
                  data-theme="a" data-position="fixed" data-fullscreen="true">
@@ -21,7 +20,6 @@
                     </form>
                 </h1>
             </div>
-
             <div role="main" class="ui-content">
                 <center>
                     <br/><br/><br/> 
@@ -37,7 +35,6 @@
                                 <div class="cardUnite">Véhicules</div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="cardTitre">Nombre de véhicules hors zone</div>
                             <div class="container">
@@ -47,7 +44,6 @@
                                 <div class="cardUnite">Véhicules</div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="cardTitre">Age moyen</div>
                             <div class="container">
@@ -57,7 +53,6 @@
                                 <div class="cardUnite">Jours</div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="cardTitre">Kilométrage moyen</div>
                             <div class="container">
@@ -67,7 +62,6 @@
                                 <div class="cardUnite">Km</div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="cardTitre">Kilométrage mensuel moyen</div>
                             <div class="container">
@@ -77,7 +71,6 @@
                                 <div class="cardUnite">Km/mois</div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="cardTitre">Conso. mensuelle moyenne</div>
                             <div class="container">
@@ -88,7 +81,6 @@
                             </div>
                         </div>
                     </div>
-
                     <br/><br/><br/><br/><br/>
                     <p class="mini">V3.1 - Mars 2020<br/>Développement : BTS SNIR Lycée V.Hugo Colomiers</p>
                     <br/><br/><br/>

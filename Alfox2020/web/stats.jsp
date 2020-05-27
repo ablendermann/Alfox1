@@ -2,7 +2,6 @@
     <head>
         <title>Statistiques</title> 
         <%@ include file="/includes/header.jspf" %>
-
     </head>
     <body>
         <div data-role="page" id="page1">
@@ -11,7 +10,6 @@
                 <h1>
                     <img id="logoHeader" src="images/alcisLogo.png"/>
                     Statistiques  
-
                     <form id="btnDeconnection" method="post" action="index.jsp">
                         <input name="action" id="logout" type="hidden" value="logout"/>
                         <button type="submit" id="submitOK" name="submitOK">
@@ -19,10 +17,8 @@
                             <img id="black" src="css/themes/images/icons-png/power-black.png" >
                         </button>
                     </form>
-
                 </h1>
             </div>
-
             <div role="main" class="ui-content">
                 <center>
                     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -33,7 +29,6 @@
                         google.charts.setOnLoadCallback(drawChart3);
                         google.charts.setOnLoadCallback(drawChart4);
                         google.charts.setOnLoadCallback(drawChart5);
-
                         function drawChart1() {
                             var data = new google.visualization.DataTable();
                             data.addColumn('string', 'Element');
@@ -126,8 +121,6 @@
                             };
                             chart.draw(data, options);
                         }
-
-
                         function drawChart5() {
                             var data = google.visualization.arrayToDataTable([
                                 ['Year', 'Sales'],
@@ -136,7 +129,6 @@
                                 ['2006', 660],
                                 ['2007', 1030]
                             ]);
-
                             var options = {
                                 width: 300,
                                 height: 300,
@@ -145,13 +137,9 @@
                                 backgroundColor: '#EEEEEE',
                                 curveType: 'function',
                             };
-
                             var chart = new google.visualization.LineChart(document.getElementById('stat5'));
-
                             chart.draw(data, options);
                         }
-
-
                     </script>
                     <br><br>
                     <div data-role='navbar' data-grid='b'>
@@ -159,11 +147,8 @@
                             <li><a href='accueil.jsp' data-ajax='false' id='navbarHome1' data-icon='info'>Infos</a></li>
                             <li><a href='stats.jsp' data-ajax='false' id='navbarLoc' data-icon='grid'>Stats</a></li>
                             <li><a href='historique.jsp' data-ajax='false' id='navbarInfos1' data-icon='clock'>Historique</a></li>
-
                         </ul>
                     </div>
-
-
                     <form class="form" >
                         <div class="ui-field-contain">
                             <label class="label" for="select-native-1">Véhicule :</label>

@@ -6,7 +6,6 @@
         <%@ include file="/includes/header.jspf" %>
     </head>
     <body>
-
         <div data-role="page" id="page1">
             <div class="header" data-role="header" data-id="main-header" data-tap-toggle="false" 
                  data-theme="a" data-position="fixed" data-fullscreen="true">
@@ -21,11 +20,8 @@
                             <img id="black" src="css/themes/images/icons-png/power-black.png" >
                         </button>
                     </form>
-
                 </h1>
-
             </div>
-
             <br><br>
             <div>
                 Veuillez choisir un véhicule:
@@ -39,7 +35,6 @@
                          </select>
                 </fieldset>
             </div>
-
                 CDC A DEFINIR PLUS TARD!
                 <%@include file="/includes/footer.jspf"%>
         </div>

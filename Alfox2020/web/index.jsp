@@ -8,7 +8,6 @@ and open the template in the editor.
     <head>
         <title>Accueil</title> 
         <%@ include file="/includes/header.jspf" %>
-
     </head>
     <body>
         <div data-role="page" id="page1">
@@ -16,7 +15,6 @@ and open the template in the editor.
                  data-theme="a" data-position="fixed" data-fullscreen="true">
                 <h1><img id="logoHeader" src="images/alcisLogo.png"/>Accueil</h1>
             </div>
-
             <div role="main" class="ui-content">
                 <center>
                     <br/><br/><br/>
@@ -25,7 +23,6 @@ and open the template in the editor.
                     <div class="logo"><img src="images/logo.png"/></div>  
                     <br/>
                     <div>
-
                     </div>
                     <br/><br/><br/>
                     <form id="formLogin" class="form" method="post" action="accueil.jsp">
